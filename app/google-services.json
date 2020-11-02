@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "916470222454",
+    "firebase_url": "https://busful-dd531.firebaseio.com",
+    "project_id": "busful-dd531",
+    "storage_bucket": "busful-dd531.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916470222454:android:624d2642f0f728f40b1957",
+        "android_client_info": {
+          "package_name": "com.example.busful"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916470222454-cns5vhsshl1jngk6e33c8v6fmtv6apbg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnbXZGiCtWfj1A7953RHgeVjVY45NKLf0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916470222454-cns5vhsshl1jngk6e33c8v6fmtv6apbg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
