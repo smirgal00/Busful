@@ -39,4 +39,5 @@ public class LoginMenu extends Activity {
         startActivity(reg);
     }
 
+
 }
