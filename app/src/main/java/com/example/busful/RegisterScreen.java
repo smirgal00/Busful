@@ -19,11 +19,15 @@ import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import static android.content.ContentValues.TAG;
 
 public class RegisterScreen extends Activity {
 
     private EditText username;
+    private EditText email;
     private EditText password;
     private EditText coPassword;
     private Button register;
@@ -36,6 +40,7 @@ public class RegisterScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_screen);
         username = (EditText) findViewById(R.id.user);
+        email = (EditText) findViewById(R.id.email);
         password = (EditText) findViewById(R.id.pass);
         coPassword = (EditText) findViewById(R.id.rep_pass);
         register = (Button) findViewById(R.id.register);
@@ -45,7 +50,11 @@ public class RegisterScreen extends Activity {
 
     public void regAction(View v) {
         String pass;
+        String email;
         pass = getPassword();
+        email = getEmail();
+        register(email, pass);
+
     }
 
     private String getPassword() {
@@ -68,6 +77,27 @@ public class RegisterScreen extends Activity {
         }
 
         return password;
+    }
+
+    private String getEmail() {
+        String email;
+
+        email = this.email.getText().toString();
+        Pattern pattern = Pattern.compile("^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$");
+        Matcher matcher = pattern.matcher(email);
+
+        if (!matcher.find()) {
+            toast = Toast.makeText(
+                getApplicationContext(),
+                    "Invalid email address!",
+                    Toast.LENGTH_LONG
+            );
+
+            toast.show();
+            this.email.setText("");
+        }
+
+        return email;
     }
 
     private boolean checkP(String password, String coPassword) {
@@ -93,12 +123,13 @@ public class RegisterScreen extends Activity {
                                     );
 
                                     toast.show();
+                                    updateUI();
                                 }
                                 else {
                                     Log.d(TAG, "createUser:failure", task.getException());
                                     toast = Toast.makeText(
                                             getApplicationContext(),
-                                            "User couldn't be created!",
+                                            "User could not be created!",
                                             Toast.LENGTH_LONG
                                     );
 
@@ -107,5 +138,10 @@ public class RegisterScreen extends Activity {
                             }
                         }
                 );
+    }
+
+    private void updateUI() {
+        FirebaseAuth.getInstance().signOut();
+        finish();
     }
 }
