@@ -26,11 +26,9 @@ import static android.content.ContentValues.TAG;
 
 public class RegisterScreen extends Activity {
 
-    private EditText username;
     private EditText email;
     private EditText password;
     private EditText coPassword;
-    private Button register;
     private Toast toast;
     private CoordinatorLayout layout;
     private FirebaseAuth auth;
@@ -39,11 +37,9 @@ public class RegisterScreen extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_screen);
-        username = (EditText) findViewById(R.id.user);
         email = (EditText) findViewById(R.id.email);
         password = (EditText) findViewById(R.id.pass);
         coPassword = (EditText) findViewById(R.id.rep_pass);
-        register = (Button) findViewById(R.id.register);
         layout = (CoordinatorLayout) findViewById(R.id.layout);
         auth = FirebaseAuth.getInstance();
     }
@@ -129,7 +125,8 @@ public class RegisterScreen extends Activity {
                                     Log.d(TAG, "createUser:failure", task.getException());
                                     toast = Toast.makeText(
                                             getApplicationContext(),
-                                            "User could not be created!",
+                                            "User could not be created! "
+                                                    + task.getException().toString(),
                                             Toast.LENGTH_LONG
                                     );
 

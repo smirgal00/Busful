@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/phone_menu"
         android:supportsRtl="true"
         android:theme="@style/Theme.Busful">
+        <activity android:name=".MainMenu"></activity>
         <activity android:name=".RegisterScreen" />
         <activity android:name=".SplashScreen">
             <intent-filter>
