@@ -9,4 +9,10 @@
     <string name="register">Register</string>
     <string name="repeat_password">Repeat Password</string>
     <string name="email">Email</string>
+    <string name="rute">Rute</string>
+    <string name="istoric">Istoric</string>
+    <string name="obiective">Obiective</string>
+    <string name="tracking">Tracking</string>
+    <string name="preturi">Preturi</string>
+    <string name="sign_out">Sign Out</string>
 </resources>
