@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/phone_menu"
         android:supportsRtl="true"
         android:theme="@style/Theme.Busful">
-        <activity android:name=".MainMenu"></activity>
+        <activity android:name=".MainMenu" />
         <activity android:name=".RegisterScreen" />
         <activity android:name=".SplashScreen">
             <intent-filter>
@@ -24,6 +24,10 @@
         <activity
             android:name=".LoginMenu"
             android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDE8PifSAP-eDAQegmRUESUDFz6LL86PtU"/>
     </application>
 
 </manifest>
