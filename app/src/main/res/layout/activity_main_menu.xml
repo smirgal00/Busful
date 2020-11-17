@@ -12,6 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
         android:text="@string/rute"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:onClick="switchToRoutes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,6 +25,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="@string/istoric"
+        android:background="@color/white"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/objectives" />
@@ -32,6 +37,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="@string/obiective"
+        android:background="@color/white"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tracking" />
@@ -42,6 +49,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="@string/tracking"
+        android:background="@color/white"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/routes" />
@@ -52,6 +61,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="@string/preturi"
+        android:background="@color/white"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/history" />
@@ -62,6 +73,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="@string/sign_out"
+        android:background="@color/white"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/prices" />
