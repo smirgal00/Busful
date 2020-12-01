@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.busful.Database.BusInfo;
+
 public class Prices extends AppCompatActivity {
 
     @Override

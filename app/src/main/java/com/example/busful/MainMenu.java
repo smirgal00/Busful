@@ -19,10 +19,11 @@ public class MainMenu extends Activity {
                 .addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION));
     }
 
-//    protected void switchToRoutes(View v) {
-//        startActivity(new Intent(this, ).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION));
-//    }
-//
+    public void switchToPrices(View v) {
+        startActivity(new Intent(this, Prices.class)
+                .addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION));
+    }
+
 //    protected void switchToRoutes(View v) {
 //        startActivity(new Intent(this, ).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION));
 //    }
