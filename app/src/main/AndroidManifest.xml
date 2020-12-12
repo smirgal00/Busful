@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/phone_menu"
@@ -13,6 +14,7 @@
         android:roundIcon="@mipmap/phone_menu"
         android:supportsRtl="true"
         android:theme="@style/Theme.Busful">
+        <activity android:name=".Maps"></activity>
         <activity android:name=".MainMenu" />
         <activity android:name=".Routes" />
         <activity android:name=".RegisterScreen" />
@@ -30,8 +32,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDE8PifSAP-eDAQegmRUESUDFz6LL86PtU"/>
-
+            android:value="AIzaSyDE8PifSAP-eDAQegmRUESUDFz6LL86PtU" />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />

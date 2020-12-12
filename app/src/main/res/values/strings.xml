@@ -15,4 +15,8 @@
     <string name="tracking">Tracking</string>
     <string name="preturi">Preturi</string>
     <string name="sign_out">Sign Out</string>
+    <string-array name="busSpinner">
+        <item>"101A"</item>
+        <item>"102B"</item>
+    </string-array>
 </resources>
