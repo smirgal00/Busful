@@ -5,9 +5,11 @@ import androidx.fragment.app.FragmentManager;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.graphics.Camera;
 import android.graphics.Color;
 import android.os.Bundle;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -45,6 +47,8 @@ public class Maps extends AppCompatActivity implements OnMapReadyCallback {
         polylineOptions.addAll(latLngList);
         polylineOptions.width(5).color(Color.RED);
         googleMap.addPolyline(polylineOptions);
+        googleMap.moveCamera(CameraUpdateFactory
+                .newLatLngZoom(new LatLng(46.069063, 23.570662), 12));
     }
 
     private void parseString() {

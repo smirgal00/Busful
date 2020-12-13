@@ -78,10 +78,5 @@ public class Routes extends Activity {
 
             }
         });
-//
-//        listView.setOnItemClickListener((parent, view, position, id) -> {
-//            name = parent.getItemAtPosition(position).toString();
-//        });
-
     }
 }

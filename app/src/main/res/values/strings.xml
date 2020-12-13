@@ -17,6 +17,11 @@
     <string name="sign_out">Sign Out</string>
     <string-array name="busSpinner">
         <item>"101A"</item>
-        <item>"102B"</item>
+        <item>"101B"</item>
+        <item>"101R"</item>
+        <item>"104A"</item>
+        <item>"102R"</item>
+        <item>"110"</item>
+        <item>"111R"</item>
     </string-array>
 </resources>
