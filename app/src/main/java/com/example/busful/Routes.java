@@ -11,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -41,14 +42,18 @@ public class Routes extends Activity {
     private Intent intent;
     private String name;
     private Map<String, String> value;
+    private ListView listView;
+    private Spinner spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_routes);
-        ListView listView = (ListView) findViewById(R.id.list);
-        listView.setAdapter(ArrayAdapter.createFromResource(this, R.array.busSpinner,
-                android.R.layout.simple_list_item_1));
+        listView = findViewById(R.id.list);
+        spinner = findViewById(R.id.zone);
+
+        setListView();
+
         value = new HashMap<>();
 
         intent = new Intent(this, Maps.class);
@@ -75,6 +80,67 @@ public class Routes extends Activity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
+
+    public void setListView() {
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                String item = parent.getItemAtPosition(position).toString();
+
+                switch (item) {
+                    case "Zona 1": {
+                        listView.setAdapter(ArrayAdapter
+                                .createFromResource(Routes.this, R.array.zone1,
+                                        android.R.layout.simple_list_item_1));
+                        break;
+                    }
+                    case "Zona 2": {
+                        listView.setAdapter(ArrayAdapter
+                                .createFromResource(Routes.this, R.array.zone2,
+                                        android.R.layout.simple_list_item_1));
+                        break;
+                    }
+                    case "Zona 3": {
+                        listView.setAdapter(ArrayAdapter
+                                .createFromResource(Routes.this, R.array.zone3,
+                                        android.R.layout.simple_list_item_1));
+                        break;
+                    }
+                    case "Zona 4": {
+                        listView.setAdapter(ArrayAdapter
+                                .createFromResource(Routes.this, R.array.zone4,
+                                        android.R.layout.simple_list_item_1));
+                        break;
+                    }
+                    case "Zona 5": {
+                        listView.setAdapter(ArrayAdapter
+                                .createFromResource(Routes.this, R.array.zone5,
+                                        android.R.layout.simple_list_item_1));
+                        break;
+                    }
+                    case "Zona 6": {
+                        listView.setAdapter(ArrayAdapter
+                                .createFromResource(Routes.this, R.array.zone6,
+                                        android.R.layout.simple_list_item_1));
+                        break;
+                    }
+                    case "Zona 7": {
+                        listView.setAdapter(ArrayAdapter
+                                .createFromResource(Routes.this, R.array.zone7,
+                                        android.R.layout.simple_list_item_1));
+                        break;
+                    }
+                    default:
+                        break;
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
 
             }
         });

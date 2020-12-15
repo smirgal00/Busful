@@ -15,7 +15,8 @@
     <string name="tracking">Tracking</string>
     <string name="preturi">Preturi</string>
     <string name="sign_out">Sign Out</string>
-    <string-array name="busSpinner">
+    <string name="spinner_entry">Selectati zona</string>
+    <string-array name="zone1">
         <item>"101A"</item>
         <item>"101B"</item>
         <item>"101R"</item>
@@ -23,5 +24,60 @@
         <item>"102R"</item>
         <item>"110"</item>
         <item>"111R"</item>
+    </string-array>
+    <string-array name="zone2">
+        <item>"201R"</item>
+        <item>"201"</item>
+        <item>"202R"</item>
+        <item>"202"</item>
+    </string-array>
+    <string-array name="zone3">
+        <item>"301A"</item>
+        <item>"301C"</item>
+        <item>"301R"</item>
+        <item>"301"</item>
+        <item>"302C"</item>
+        <item>"302H"</item>
+        <item>"302R"</item>
+    </string-array>
+    <string-array name="zone4">
+        <item>"401C"</item>
+        <item>"401H"</item>
+        <item>"401R"</item>
+        <item>"410"</item>
+        <item>"402A"</item>
+        <item>"402I"</item>
+        <item>"402R"</item>
+    </string-array>
+    <string-array name="zone5">
+        <item>"501A"</item>
+        <item>"501B"</item>
+        <item>"501R"</item>
+        <item>"501"</item>
+        <item>"502B"</item>
+        <item>"502R"</item>
+        <item>"502"</item>
+    </string-array>
+    <string-array name="zone6">
+        <item>"601B"</item>
+        <item>"601C"</item>
+        <item>"601E"</item>
+        <item>"601F"</item>
+        <item>"601G"</item>
+        <item>"601H"</item>
+        <item>"601R"</item>
+    </string-array>
+    <string-array name="zone7">
+        <item>"701R"</item>
+        <item>"701"</item>
+    </string-array>
+    <string-array name="zoneSpinner">
+        <item>"Zona 1</item>
+        <item>"Zona 2</item>
+        <item>"Zona 3</item>
+        <item>"Zona 4</item>
+        <item>"Zona 5</item>
+        <item>"Zona 6</item>
+        <item>"Zona 7</item>
     </string-array>
 </resources>
