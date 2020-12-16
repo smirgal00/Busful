@@ -110,4 +110,11 @@
     <string name="pret">Pret nou</string>
     <string name="Zona">Zona</string>
     <string name="pret_vechi">Pret vechi</string>
+    <string name="cumpara_bilet">Cumpara bilet</string>
+    <string name="numar_card">Numar card</string>
+    <string name="data_expirarii">Data expirarii</string>
+    <string name="cvv">CVV</string>
+    <string name="nume_card">Nume card</string>
+    <string name="plateste">Plateste</string>
+    <string name="numar_de_telefon">Numar de telefon</string>
 </resources>

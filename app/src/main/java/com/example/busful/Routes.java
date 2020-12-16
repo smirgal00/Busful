@@ -148,4 +148,10 @@ public class Routes extends Activity {
             }
         });
     }
+
+    public void switchToPay(View v) {
+        startActivity(new Intent(this, Pay.class)
+                .putExtra("zone", spinner.getSelectedItem().toString())
+                .addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION));
+    }
 }
