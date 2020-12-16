@@ -51,6 +51,9 @@ public class Routes extends Activity {
         setContentView(R.layout.activity_routes);
         listView = findViewById(R.id.list);
         spinner = findViewById(R.id.zone);
+        spinner.setAdapter(ArrayAdapter.createFromResource(this,
+                R.array.zoneSpinner,
+                R.layout.spinner_item));
 
         setListView();
 

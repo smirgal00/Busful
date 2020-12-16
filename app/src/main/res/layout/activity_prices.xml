@@ -6,4 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".Prices">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/zone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/spinner_entry"
+            />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="sans"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

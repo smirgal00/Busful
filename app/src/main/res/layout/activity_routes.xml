@@ -15,7 +15,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/zone"
-            android:entries="@array/zoneSpinner"
             android:prompt="@string/spinner_entry"/>
 
         <ListView

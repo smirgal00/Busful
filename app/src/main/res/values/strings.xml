@@ -16,6 +16,7 @@
     <string name="preturi">Preturi</string>
     <string name="sign_out">Sign Out</string>
     <string name="spinner_entry">Selectati zona</string>
+    <string name="introdu">Introdu</string>
     <string-array name="zone1">
         <item>"101A"</item>
         <item>"101B"</item>
