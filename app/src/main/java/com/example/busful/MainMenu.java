@@ -27,10 +27,10 @@ public class MainMenu extends Activity {
     public void switchToHistory(View v) {
         startActivity(new Intent(this, History.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION));
     }
-//
-//    protected void switchToRoutes(View v) {
-//        startActivity(new Intent(this, ).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION));
-//    }
+
+    public void switchToTracking(View v) {
+        startActivity(new Intent(this, Tracking.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION));
+    }
 //
 //    protected void switchToRoutes(View v) {
 //        startActivity(new Intent(this, ).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION));
