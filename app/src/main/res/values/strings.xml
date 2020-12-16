@@ -99,4 +99,15 @@
     values-round/strings.xml for round devices.
     -->
     <string name="hello_world">Hello Square World!</string>
+    <string name="schimbare_ruta">Schimbare ruta</string>
+    <string name="schimbare_pret">Schimbare pret</string>
+    <string name="schimba">Schimba</string>
+    <string name="longitudine">Longitudine</string>
+    <string name="latitudine">Latitudine</string>
+    <string name="coordonate">Coordonate</string>
+    <string name="numar_autobuz">Numar autobuz</string>
+    <string name="coordonate_vechi">Coordonate vechi</string>
+    <string name="pret">Pret nou</string>
+    <string name="Zona">Zona</string>
+    <string name="pret_vechi">Pret vechi</string>
 </resources>

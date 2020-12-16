@@ -14,6 +14,30 @@ public class ZoneInfo {
     private Double a21;
     private Double a30;
 
+    public void update(Double old, Double neww) {
+        if (bilete.equals(old)) {
+            bilete = neww;
+        }
+        if (a1 != null && a1.equals(old)) {
+            a1 = neww;
+        }
+        else if (a5 != null && a5.equals(old)) {
+            a5 = neww;
+        }
+        else if (a7 != null && a7.equals(old)) {
+            a7 = neww;
+        }
+        else if (a15 != null && a15.equals(old)) {
+            a15 = neww;
+        }
+        else if (a21 != null && a21.equals(old)) {
+            a21 = neww;
+        }
+        else if (a30 != null && a30.equals(old)) {
+            a30 = neww;
+        }
+    }
+
     @NonNull
     @Override
     public String toString() {

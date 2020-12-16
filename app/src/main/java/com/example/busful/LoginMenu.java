@@ -58,7 +58,7 @@ public class LoginMenu extends Activity {
                                     "Login succesful!",
                                     Toast.LENGTH_LONG
                             ).show();
-                            updateUI();
+                            updateUI(user);
                         }
                         else {
                             Toast.makeText(
@@ -73,10 +73,17 @@ public class LoginMenu extends Activity {
                 });
     }
 
-    private void updateUI() {
-        Intent intent = new Intent(this, MainMenu.class);
+    private void updateUI(String user) {
+        Intent intent;
+        if (user.contains("admin")) {
+            intent = new Intent(this, MainMenuAdmin.class);
+        }
+        else {
+            intent = new Intent(this, MainMenu.class);
+        }
         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         startActivity(intent);
+
     }
 
     private void clearText() {

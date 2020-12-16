@@ -18,6 +18,9 @@
         android:roundIcon="@mipmap/phone_menu"
         android:supportsRtl="true"
         android:theme="@style/Theme.Busful">
+        <activity android:name=".PriceChange"></activity>
+        <activity android:name=".RouteChange" />
+        <activity android:name=".MainMenuAdmin" />
         <activity android:name=".ObjectivesMap" />
         <activity android:name=".Maps" />
         <activity android:name=".MainMenu" />
