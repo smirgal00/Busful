@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 
 public class MainMenu extends Activity {
 
@@ -31,12 +33,13 @@ public class MainMenu extends Activity {
     public void switchToTracking(View v) {
         startActivity(new Intent(this, Tracking.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION));
     }
-//
-//    protected void switchToRoutes(View v) {
-//        startActivity(new Intent(this, ).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION));
-//    }
-//
-//    protected void switchToRoutes(View v) {
-//        startActivity(new Intent(this, ).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION));
-//    }
+
+    public void switchToObjectives(View v) {
+        startActivity(new Intent(this, Objectives.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION));
+    }
+
+    public void signOut(View v) {
+        FirebaseAuth.getInstance().signOut();
+        finish();
+    }
 }

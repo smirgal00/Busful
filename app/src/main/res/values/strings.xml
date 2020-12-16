@@ -17,6 +17,7 @@
     <string name="sign_out">Sign Out</string>
     <string name="spinner_entry">Selectati zona</string>
     <string name="introdu">Introdu</string>
+    <string name="vizualizare_informatii">Vizualizare informatii</string>
     <string-array name="zone1">
         <item>"101A"</item>
         <item>"101B"</item>
@@ -81,4 +82,21 @@
         <item>"Zona 6</item>
         <item>"Zona 7</item>
     </string-array>
+    <string-array name="objlist">
+        <item>"Muzeul Principia"</item>
+        <item>"Muzeul Unirii"</item>
+        <item>"Museikon"</item>
+        <item>"Catedrala Romano-Catolica"</item>
+        <item>"Catedrala Incoronarii"</item>
+        <item>"Traseul celor trei Fortificatii"</item>
+        <item>"Parcul Dendrologic"</item>
+        <item>"Parcul de Aventura Dynamis"</item>
+        <item>"Obelisc"</item>
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
 </resources>
